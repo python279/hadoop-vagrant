@@ -25,54 +25,52 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.provision :shell, :path => "bootstrap.sh"
 
   config.vm.define :c6501 do |c6501|
-    # uncomment the line below to set up the ambari dev environment
-    # c6501.vm.provision :shell, :path => "dev-bootstrap.sh"
-    c6501.vm.hostname = "c6501.ambari.apache.org"
+    c6501.vm.hostname = "c6501.python279.org"
     c6501.vm.network :private_network, ip: "192.168.65.101"
   end
 
   config.vm.define :c6502 do |c6502|
-    c6502.vm.hostname = "c6502.ambari.apache.org"
+    c6502.vm.hostname = "c6502.python279.org"
     c6502.vm.network :private_network, ip: "192.168.65.102"
   end
 
   config.vm.define :c6503 do |c6503|
-    c6503.vm.hostname = "c6503.ambari.apache.org"
+    c6503.vm.hostname = "c6503.python279.org"
     c6503.vm.network :private_network, ip: "192.168.65.103"
   end
 
   config.vm.define :c6504 do |c6504|
-    c6504.vm.hostname = "c6504.ambari.apache.org"
+    c6504.vm.hostname = "c6504.python279.org"
     c6504.vm.network :private_network, ip: "192.168.65.104"
   end
 
   config.vm.define :c6505 do |c6505|
-    c6505.vm.hostname = "c6505.ambari.apache.org"
+    c6505.vm.hostname = "c6505.python279.org"
     c6505.vm.network :private_network, ip: "192.168.65.105"
   end
 
   config.vm.define :c6506 do |c6506|
-    c6506.vm.hostname = "c6506.ambari.apache.org"
+    c6506.vm.hostname = "c6506.python279.org"
     c6506.vm.network :private_network, ip: "192.168.65.106"
   end
 
   config.vm.define :c6507 do |c6507|
-    c6507.vm.hostname = "c6507.ambari.apache.org"
+    c6507.vm.hostname = "c6507.python279.org"
     c6507.vm.network :private_network, ip: "192.168.65.107"
   end
 
   config.vm.define :c6508 do |c6508|
-    c6508.vm.hostname = "c6508.ambari.apache.org"
+    c6508.vm.hostname = "c6508.python279.org"
     c6508.vm.network :private_network, ip: "192.168.65.108"
   end
 
   config.vm.define :c6509 do |c6509|
-    c6509.vm.hostname = "c6509.ambari.apache.org"
+    c6509.vm.hostname = "c6509.python279.org"
     c6509.vm.network :private_network, ip: "192.168.65.109"
   end
 
   config.vm.define :c6510 do |c6510|
-    c6510.vm.hostname = "c6510.ambari.apache.org"
+    c6510.vm.hostname = "c6510.python279.org"
     c6510.vm.network :private_network, ip: "192.168.65.110"
   end
 
