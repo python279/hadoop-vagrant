@@ -6,12 +6,5 @@ mkdir -p /root/.ssh
 chmod 700 /root/.ssh
 cp /home/vagrant/.ssh/authorized_keys /root/.ssh/
 
-# Increasing swap space
-dd if=/dev/zero of=/swapfile bs=1024 count=3072k
-mkswap /swapfile
-chmod 600 /swapfile
-swapon /swapfile
-echo "/swapfile       none    swap    sw      0       0" >> /etc/fstab
-
 cp /vagrant/insecure_private_key /root/insecure_private_key
 chmod 600 /root/insecure_private_key
