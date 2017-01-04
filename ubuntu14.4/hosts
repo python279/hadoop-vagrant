@@ -1,8 +1,8 @@
 127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
 ::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
-192.168.14.101 u1401.python279.org u1401
-192.168.14.102 u1402.python279.org u1402
-192.168.14.103 u1403.python279.org u1403
+192.168.14.101 u1401.python279.org u1401 db1
+192.168.14.102 u1402.python279.org u1402 db2
+192.168.14.103 u1403.python279.org u1403 mon
 192.168.14.104 u1404.python279.org u1404
 192.168.14.105 u1405.python279.org u1405
 192.168.14.106 u1406.python279.org u1406

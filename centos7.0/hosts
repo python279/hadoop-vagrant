@@ -1,8 +1,8 @@
 127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
 ::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
-192.168.70.101 c7001.python279.org c7001
-192.168.70.102 c7002.python279.org c7002
-192.168.70.103 c7003.python279.org c7003
+192.168.70.101 c7001.python279.org c7001 db1
+192.168.70.102 c7002.python279.org c7002 db2
+192.168.70.103 c7003.python279.org c7003 mmm
 192.168.70.104 c7004.python279.org c7004
 192.168.70.105 c7005.python279.org c7005
 192.168.70.106 c7006.python279.org c7006
