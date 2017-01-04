@@ -66,7 +66,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     c6808.vm.network :private_network, ip: "192.168.68.108"
   end
 
-  config.vm.define :c6809 do |c6609|
+  config.vm.define :c6809 do |c6809|
     c6809.vm.hostname = "c6809.ambari.apache.org"
     c6809.vm.network :private_network, ip: "192.168.68.109"
   end
