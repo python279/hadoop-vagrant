@@ -10,5 +10,5 @@ mkdir -p /root/.ssh; chmod 600 /root/.ssh; cp /home/vagrant/.ssh/authorized_keys
 #Again, stopping iptables
 /etc/init.d/iptables stop
 
-sudo cp /vagrant/insecure_private_key /root/ec2-keypair
-sudo chmod 600 /root/ec2-keypair
+cp /vagrant/insecure_private_key /root/ec2-keypair
+chmod 600 /root/ec2-keypair
