@@ -25,52 +25,52 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.provision :shell, :path => "bootstrap.sh"
 
   config.vm.define :c7001 do |c7001|
-    c7001.vm.hostname = "c7001.python279.org"
+    c7001.vm.hostname = "c7001"
     c7001.vm.network :private_network, ip: "192.168.70.101"
   end
 
   config.vm.define :c7002 do |c7002|
-    c7002.vm.hostname = "c7002.python279.org"
+    c7002.vm.hostname = "c7002"
     c7002.vm.network :private_network, ip: "192.168.70.102"
   end
 
   config.vm.define :c7003 do |c7003|
-    c7003.vm.hostname = "c7003.python279.org"
+    c7003.vm.hostname = "c7003"
     c7003.vm.network :private_network, ip: "192.168.70.103"
   end
 
   config.vm.define :c7004 do |c7004|
-    c7004.vm.hostname = "c7004.python279.org"
+    c7004.vm.hostname = "c7004"
     c7004.vm.network :private_network, ip: "192.168.70.104"
   end
 
   config.vm.define :c7005 do |c7005|
-    c7005.vm.hostname = "c7005.python279.org"
+    c7005.vm.hostname = "c7005"
     c7005.vm.network :private_network, ip: "192.168.70.105"
   end
 
   config.vm.define :c7006 do |c7006|
-    c7006.vm.hostname = "c7006.python279.org"
+    c7006.vm.hostname = "c7006"
     c7006.vm.network :private_network, ip: "192.168.70.106"
   end
 
   config.vm.define :c7007 do |c7007|
-    c7007.vm.hostname = "c7007.python279.org"
+    c7007.vm.hostname = "c7007"
     c7007.vm.network :private_network, ip: "192.168.70.107"
   end
 
   config.vm.define :c7008 do |c7008|
-    c7008.vm.hostname = "c7008.python279.org"
+    c7008.vm.hostname = "c7008"
     c7008.vm.network :private_network, ip: "192.168.70.108"
   end
 
   config.vm.define :c7009 do |c7009|
-    c7009.vm.hostname = "c7009.python279.org"
+    c7009.vm.hostname = "c7009"
     c7009.vm.network :private_network, ip: "192.168.70.109"
   end
 
   config.vm.define :c7010 do |c7010|
-    c7010.vm.hostname = "c7010.python279.org"
+    c7010.vm.hostname = "c7010"
     c7010.vm.network :private_network, ip: "192.168.70.110"
   end
 
