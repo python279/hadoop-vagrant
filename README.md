@@ -1,11 +1,11 @@
 - Download and install git for windows from https://git-for-windows.github.io if you are running windows.
 - Download and install VirtualBox from https://www.virtualbox.org/wiki/Downloads.
 - Download and install Vagrant from https://www.vagrantup.com/downloads.html.
-- Clone the ambari-vagrant GitHub repository into a convenient folder on your PC or Mac. Navigate to the folder, and enter the following command from the terminal:
+- Clone the hadoop-vagrant GitHub repository into a convenient folder on your PC or Mac. Navigate to the folder, and enter the following command from the terminal:
 ```
 git clone https://github.com/python279/hadoop-vagrant.git
 ```
-- Add virtual machine hostnames and addresses to the /etc/hosts file on your computer. The following command copies a set of host names and addresses from ambari-vagrant/append-to-etc-hosts.txt to the end of the /etc/hosts files:
+- Add virtual machine hostnames and addresses to the /etc/hosts file on your computer. The following command copies a set of host names and addresses from hadoop-vagrant/append-to-etc-hosts.txt to the end of the /etc/hosts files:
 Linux and Mac
 ```
 sudo -s 'cat hadoop-vagrant/append-to-etc-hosts.txt >> /etc/hosts'
