@@ -8,3 +8,5 @@ cp /home/vagrant/.ssh/authorized_keys /root/.ssh/
 
 cp /vagrant/insecure_private_key /root/insecure_private_key
 chmod 600 /root/insecure_private_key
+
+apt-get install -y openntpd
