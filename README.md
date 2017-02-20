@@ -15,21 +15,25 @@ Append the content of 'hadoop-vagrant\append-to-etc-hosts.txt' to 'C:\Windows\Sy
 
 - Use the vagrant command to create a private key to use with virtual Linux:
 ```
-vagrant
+$ vagrant
 ```
 - Change your current directory to hadoop-vagrant/ubuntu14.4
 ```
-cd hadoop-vagrant/ubuntu14.4
+$ cd hadoop-vagrant/ubuntu14.4
+```
+- Cascade the splitted box files to one box
+```
+$ cat ubuntu1404.box.* > ubuntu1404.box
 ```
 - Copy the private key into the directory associated with the chosen operating system. 
 For this example, which uses ubuntu14.4, issue the following command:
 ```
-cp ~/.vagrant.d/insecure_private_key .
+$ cp ~/.vagrant.d/insecure_private_key .
 ```
 - Every virtual machine will have a directory called /vagrant inside the VM. This corresponds to the hadoop-vagrant/<os> directory on your local computer, making it easy to transfer files back and forth between your host Mac and the virtual machine. If you have any files to access from within the VM, you can place them in this shared directory.
 - Start one or more VMs, using the ./up.sh command. Each VM will run one HDP node. Recommendation: if you have at least 16GB of RAM on your Mac and wish to run a small cluster, start with three nodes.
 ```
-./up.sh 1 # numberof VMs to launch
+$ ./up.sh 1 # numberof VMs to launch
 ```
 - Check the status of your VM(s), and review any errors. The following example shows the results of ./up.sh 1 for three VMs running with Ubuntu 14.04:
 ```
@@ -63,12 +67,15 @@ Run 'do-release-upgrade' to upgrade to it.
 
 Last login: Mon Dec 26 10:31:01 2016 from 10.0.2.2
 vagrant@u1401:~$
+- Destroy the vm
 ```
-- Download and install hadoop from http://mirrors.tuna.tsinghua.edu.cn/apache/hadoop/common/hadoop-2.7.3/hadoop-2.7.3.tar.gz
+$ vagrant destroy u1401
 ```
-cd && wget -c http://mirrors.tuna.tsinghua.edu.cn/apache/hadoop/common/hadoop-2.7.3/hadoop-2.7.3.tar.gz && tar -xzf hadoop-2.7.3.tar.gz && ln -s hadoop-2.7.3 hadoop
+- Re-provision the bootstrap.sh
 ```
-- Download and install latest jdk from http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+$ vagrant provision u1401
 ```
-cd && tar -xzf /vagrant/jdk-8u112-linux-x64.tar.gz && ln -s jdk1.8.0_112 jdk
+- Shutdown the vm
+```
+$ vagrant halt u1401
 ```
