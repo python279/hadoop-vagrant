@@ -21,7 +21,7 @@ $ vagrant
 ```
 $ cd hadoop-vagrant/ubuntu14.4
 ```
-- Cascade the splitted box files to one box
+- Cascade the splitted box files to one box, the box size exceeds the single file size limitation so I splite it into saveral pieces.
 ```
 $ cat ubuntu1404.box.* > ubuntu1404.box
 ```
