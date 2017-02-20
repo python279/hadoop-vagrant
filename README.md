@@ -67,6 +67,7 @@ Run 'do-release-upgrade' to upgrade to it.
 
 Last login: Mon Dec 26 10:31:01 2016 from 10.0.2.2
 vagrant@u1401:~$
+```
 - Destroy the vm
 ```
 $ vagrant destroy u1401
