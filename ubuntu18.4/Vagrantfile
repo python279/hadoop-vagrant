@@ -7,13 +7,14 @@ VAGRANTFILE_API_VERSION = "2"
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # All Vagrant configuration is done here. The most common configuration
   # Every Vagrant virtual environment requires a box to build off of.
-  config.vm.box = "file://ubuntu1804.box"
+  config.vm.box = "generic/ubuntu1804"
 
   # Fixes changes from https://github.com/mitchellh/vagrant/pull/4707
   config.ssh.insert_key = false
 
   config.vm.provider :virtualbox do |vb|
-    vb.customize ["modifyvm", :id, "--memory", 1024] # RAM allocated to each VM
+    vb.customize ["modifyvm", :id, "--memory", 8000]
+    vb.customize ["modifyvm", :id, "--cpus", 8]
   end
 
   config.vm.provision "fix-no-tty", type: "shell" do |s|

@@ -1,15 +1,16 @@
 #!/usr/bin/env bash
 
 cp /vagrant/hosts /etc/hosts
+cp /vagrant/sources.list /etc/apt/
 
 mkdir -p /root/.ssh
 chmod 700 /root/.ssh
+cp /vagrant/insecure_private_key /root/.ssh/id_rsa
 cp /home/vagrant/.ssh/authorized_keys /root/.ssh/
+cat /vagrant/authorized_keys >> /root/.ssh/authorized_keys
 
-cp /vagrant/insecure_private_key /root/insecure_private_key
-chmod 600 /root/insecure_private_key
-
-apt-get install -y locales openntpd tzdata
+apt-get update
+apt-get install -y locales chrony tzdata nfs-common
 locale-gen en_US.UTF-8
 dpkg-reconfigure -f noninteractive locales
 rm -f /etc/localtime
